@@ -5,19 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oki Ramadani | Web Developer</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-animation.css">
+  <link rel="stylesheet" href="two-tone-theme.css">
+  <link rel="stylesheet" href="contact-fix.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Portfolio profesional Oki Ramadani, seorang Full Stack Developer dan Project Manager dengan keahlian dalam Odoo, React, Node.js, dan Python.">
+  <meta name="keywords" content="web developer, full stack developer, project manager, odoo developer, react developer, portfolio">
 </head>
 <body>
   <header>
     <div class="logo">
       <h1>Oki Ramadani</h1>
-      <p>Full Stack Developer</p>
+      <p>Project Manager & Full Stack Developer</p>
     </div>
     <nav class="nav-links">
       <a href="#about" data-id="nav-about">Tentang</a>
       <a href="#skills" data-id="nav-skills">Keahlian</a>
       <a href="#projects" data-id="nav-projects">Proyek</a>
+      <a href="#experience" data-id="nav-experience">Pengalaman</a>
       <a href="#contact" data-id="nav-contact">Kontak</a>
       <div class="language-toggle">
         <button id="lang-id" class="lang-btn active">ID</button>
@@ -25,13 +31,28 @@
         <button id="lang-en" class="lang-btn">EN</button>
       </div>
     </nav>
+    <div class="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
   </header>
+  
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn"><i class="fas fa-moon"></i></button>
+  </div>
 
   <section class="hero">
     <div class="hero-text">
-      <h2 data-id="hero-title">Selamat Datang di Portfolio Saya</h2>
-      <p data-id="hero-subtitle">Saya adalah seorang Project Manager sekaligus Web Developer yang memiliki semangat tinggi dalam membangun aplikasi modern. Saya berfokus pada manajemen proyek yang efektif, pengalaman pengguna yang optimal, dan penerapan kode berkualitas tinggi untuk memastikan hasil yang fungsional dan berkelanjutan.</p>
-      <a href="#contact" class="btn" data-id="hero-cta">Hubungi Saya</a>
+      <h2 data-id="hero-title" class="reveal">Selamat Datang di Portfolio Saya</h2>
+      <p data-id="hero-subtitle" class="reveal">Saya adalah seorang Project Manager sekaligus Web Developer yang memiliki semangat tinggi dalam membangun aplikasi modern. Saya berfokus pada manajemen proyek yang efektif, pengalaman pengguna yang optimal, dan penerapan kode berkualitas tinggi untuk memastikan hasil yang fungsional dan berkelanjutan.</p>
+      <div class="hero-buttons reveal">
+        <a href="#contact" class="btn primary-btn" data-id="hero-cta">Hubungi Saya</a>
+        <a href="cv.html" class="btn secondary-btn" data-id="view-cv">Lihat CV</a>
+      </div>
+      <div class="social-links reveal">
+        <a href="https://www.linkedin.com/in/oki-ramadani/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Okiramadani15" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:okiramadani53@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
     <img src="images/profile.png" alt="Foto Profil" class="profile-img">
   </section>
@@ -42,7 +63,44 @@
         <h3 data-id="about-title">Tentang Saya</h3>
         <p data-id="about-subtitle">Mengenal lebih dekat siapa saya dan apa yang saya lakukan</p>
       </div>
-      <p data-id="about-description">Saya adalah seorang Project Manager sekaligus Web Developer yang memiliki semangat tinggi dalam membangun aplikasi modern. Saya berfokus pada manajemen proyek yang efektif, pengalaman pengguna yang optimal, dan penerapan kode berkualitas tinggi untuk memastikan hasil yang fungsional dan berkelanjutan..</p>
+      <div class="about-content">
+        <div class="about-text">
+          <p data-id="about-description">Saya adalah seorang Project Manager sekaligus Web Developer dengan pengalaman lebih dari 5 tahun dalam industri teknologi. Saya memiliki semangat tinggi dalam membangun aplikasi modern yang berfokus pada manajemen proyek yang efektif, pengalaman pengguna yang optimal, dan penerapan kode berkualitas tinggi.</p>
+          <p data-id="about-description-2">Dengan latar belakang teknis yang kuat dan kemampuan manajemen yang baik, saya mampu menjembatani kesenjangan antara tim teknis dan bisnis untuk menghasilkan solusi yang memenuhi kebutuhan pengguna dan tujuan bisnis.</p>
+          
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-user-graduate"></i>
+              <div>
+                <h5>Pendidikan</h5>
+                <p>S1 Sistem Informasi, Universitas Mikroskil</p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <h5>Pengalaman</h5>
+                <p>3+ tahun sebagai Web Developer & Project Manager</p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h5>Lokasi</h5>
+                <p>Jakarta, Indonesia</p>
+                <p>Medan, Indonesia</p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-language"></i>
+              <div>
+                <h5>Bahasa</h5>
+                <p>Indonesia (Native), English (Intermediate)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -87,7 +145,7 @@
             </div>
           </div>
           
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <div class="skill-info">
               <span class="skill-name"><i class="fab fa-node-js"></i> Node.js</span>
               <span class="skill-percentage">75%</span>
@@ -97,7 +155,7 @@
             </div>
           </div>
           
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <div class="skill-info">
               <span class="skill-name"><i class="fab fa-python"></i> Python</span>
               <span class="skill-percentage">85%</span>
@@ -109,9 +167,9 @@
         </div>
         
         <div class="skills-category">
-          <h4 data-id="other-skills-title">Other Skills</h4>
+          <h4 data-id="other-skills-title" class="reveal">Other Skills</h4>
           
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <div class="skill-info">
               <span class="skill-name"><i class="fas fa-code"></i> XML</span>
               <span class="skill-percentage">90%</span>
@@ -121,7 +179,7 @@
             </div>
           </div>
           
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <div class="skill-info">
               <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS</span>
               <span class="skill-percentage">80%</span>
@@ -131,7 +189,7 @@
             </div>
           </div>
           
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <div class="skill-info">
               <span class="skill-name"><i class="fab fa-react"></i> Next.js</span>
               <span class="skill-percentage">75%</span>
@@ -141,7 +199,7 @@
             </div>
           </div>
           
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <div class="skill-info">
               <span class="skill-name"><i class="fab fa-node-js"></i> Nest.js</span>
               <span class="skill-percentage">70%</span>
@@ -151,7 +209,7 @@
             </div>
           </div>
           
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <div class="skill-info">
               <span class="skill-name"><i class="fas fa-database"></i> Database Management</span>
               <span class="skill-percentage">85%</span>
@@ -164,326 +222,472 @@
       </div>
       
       <h4 class="tech-stack-title" data-id="tech-stack-title">Technology Stack</h4>
-      <ul class="skills-list">
-        <li><i class="fab fa-python"></i> Odoo Technical Customize Developer</li>
-        <li><i class="fab fa-css3-alt"></i> CSS</li>
-        <li><i class="fab fa-js"></i> JavaScript</li>
-        <li><i class="fab fa-react"></i> Next.js</li>
-        <li><i class="fab fa-react"></i> React</li>
-        <li><i class="fab fa-node-js"></i> Node.js</li>
-        <li><i class="fab fa-node-js"></i> Nest.js</li>
-        <li><i class="fab fa-python"></i> Python</li>
-        <li><i class="fas fa-code"></i> XML</li>
-        <li><i class="fab fa-python"></i> Odoo.dev</li>
-      </ul>
+      <div class="tech-stack-container">
+        <ul class="skills-list">
+          <li><i class="fab fa-python"></i> Odoo Technical Customize Developer</li>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fab fa-js"></i> JavaScript</li>
+          <li><i class="fab fa-react"></i> Next.js</li>
+          <li><i class="fab fa-react"></i> React</li>
+          <li><i class="fab fa-node-js"></i> Node.js</li>
+          <li><i class="fab fa-node-js"></i> Nest.js</li>
+          <li><i class="fab fa-python"></i> Python</li>
+          <li><i class="fas fa-code"></i> XML</li>
+          <li><i class="fab fa-python"></i> Odoo.dev</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section id="projects" class="projects">
     <div class="container">
       <div class="section-header">
-        <h3 data-id="projects-title">Projects</h3>
-        <p data-id="projects-subtitle">Some of the latest projects I have worked on</p>
-        <a href="#" id="toggle-projects-button" class="btn btn-primary" data-id="view-projects-btn">View All Projects</a>
-      </div>      
-      <div class="project-grid" id="project-grid" style="display: none;">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x180?text=KADA+Integration" alt="KADA Integration">
-          <h4>Project Manager IT Onboarding at Concepto.id</h4>
-          <p>Mengelola pengembangan dan integrasi aplikasi KADA, termasuk sistem HRIS (Human Resource Information System) dan platform pencari kerja. Bertanggung jawab atas koordinasi tim, perencanaan sprint, dan memastikan kualitas deliverable sesuai dengan kebutuhan klien.</p>
-          <a href="#" class="btn btn-outline" data-id="view-project-btn">View Project</a>
+        <h3 data-id="projects-title" class="reveal">Proyek</h3>
+        <p data-id="projects-subtitle" class="reveal">Beberapa proyek terbaru yang telah saya kerjakan</p>
+      </div>
+      
+      <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="odoo">Odoo</button>
+        <button class="filter-btn" data-filter="management">Project Management</button>
+      </div>
+
+      <div class="project-grid" id="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal" data-category="management, web">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=KADA+Integration" alt="KADA Integration">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>Project Manager IT Onboarding at Concepto.id</h4>
+            <p>Mengelola pengembangan dan integrasi aplikasi KADA, termasuk sistem HRIS (Human Resource Information System) dan platform pencari kerja. Bertanggung jawab atas koordinasi tim, perencanaan sprint, dan memastikan kualitas deliverable sesuai dengan kebutuhan klien.</p>
+            <div class="project-tech">
+              <span>Odoo</span>
+              <span>Python</span>
+              <span>Project Management</span>
+            </div>
+            <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x180?text=Odoo+Customization" alt="Odoo Customization">
-          <h4>Technical Odoo Customize Developer at PT Yifang Cargo Mutiara Elektronik</h4>
-          <p>Mengimplementasikan dan mengkustomisasi modul Odoo sesuai dengan alur bisnis perusahaan. Mengembangkan fitur khusus untuk manajemen inventori, akuntansi, dan sistem logistik yang terintegrasi, meningkatkan efisiensi operasional sebesar 35%.</p>
-          <a href="#" class="btn btn-outline" data-id="view-project-btn">View Project</a>
+      
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-category="odoo">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=Odoo+Customization" alt="Odoo Customization">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>Technical Odoo Customize Developer at PT Yifang Cargo Mutiara Elektronik</h4>
+            <p>Mengimplementasikan dan mengkustomisasi modul Odoo sesuai dengan alur bisnis perusahaan. Mengembangkan fitur khusus untuk manajemen inventori, akuntansi, dan sistem logistik yang terintegrasi, meningkatkan efisiensi operasional sebesar 35%.</p>
+            <div class="project-tech">
+              <span>Odoo</span>
+              <span>Python</span>
+              <span>XML</span>
+            </div>
+            <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x180?text=Toll+Road+App" alt="Toll Road App">
-          <h4>Mobile Information App for Toll Roads</h4>
-          <p>Mengembangkan aplikasi mobile yang menyediakan informasi real-time tentang jalan tol Hutama Marga Waskita. Fitur utama meliputi pemantauan lalu lintas, notifikasi kemacetan, estimasi waktu tempuh, dan informasi tarif tol yang terintegrasi dengan sistem pembayaran elektronik.</p>le app providing information about the toll roads of Hutama Marga Waskita, integrated for real-time updates.</p>
-          <a href="#" class="btn btn-outline" data-id="view-project-btn">View Project</a>
+      
+        <!-- Project 3 -->
+        <div class="project-card reveal" data-category="Mobile, web">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=Mobile+Apps" alt="Mobile Apps">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>Research & Backend Developer mobile Apps (Hutama Marga Waskita) at Delameta Bilano</h4>
+            <p>Mengembangkan platform Mobile appilication pada sisi BackEnd modern dengan fitur pembayaran terintegrasi, manajemen inventori real-time, dan dashboard analitik.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x180?text=AI+Monitoring+System" alt="AI Monitoring System">
-          <h4>Passenger Monitoring System with AI & CCTV</h4>
-          <p>AI-powered passenger monitoring system using computer vision technology to count passengers in real-time through CCTV.</p>
-          <a href="#" class="btn btn-outline" data-id="view-project-btn">View Project</a>
+      
+        <!-- Project 4 -->
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=E-Commerce+Platform" alt="Web/Mobile Platform">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>Research & Backend Developer Bus Monitoring AI at Delameta Bilano</h4>
+            <p>Mengembangkan platform Web/Mobile application pada sisi BackEnd untuk monitoring bus dengan integrasi ke AI camera dan GPS tracking modern dengan fitur pembayaran terintegrasi, manajemen inventori real-time, dan dashboard analitik.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Python</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x180?text=SAP+Implementation" alt="SAP Implementation">
-          <h4>SAP Functional System Analyst at PT Sumber Karindo Sakti</h4>
-          <p>Customizing and transferring functional knowledge of SAP applications to admin and users at PT Sumber Karindo Sakti, adapting SAP usage to the company's business flow.</p>
-          <a href="#" class="btn btn-outline" data-id="view-project-btn">View Project</a>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="web management">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=CRM+System" alt="Backoffice System">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>Backoffice System</h4>
+            <p>Merancang dan mengimplementasikan sistem Backoffice untuk pesantren yang disesuaikan dengan kebutuhan spesifik pesantren, termasuk otomatisasi alur kerja, pelacakan by barcode, dan integrasi dengan platform komunikasi.</p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>Nest.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x180?text=E-Commerce+App" alt="E-Commerce App">
-          <h4>Backoffice Web/App</h4>
-          <p>An e-commerce app with online payment features, shopping cart, and product management system.</p>
-          <a href="#" class="btn btn-outline" data-id="view-project-btn">View Project</a>
+      
+      </div>
+      
+      <!-- Load More Projects Button -->
+      <div class="text-center">
+        <a href="#" id="load-more-projects" class="btn btn-primary" data-id="load-more-btn">Muat Lebih Banyak</a>
+      </div>
+      
+      
+      <!-- <div class="project-grid" id="project-grid">
+        <div class="project-card" data-category="management odoo, web">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=KADA+Integration" alt="KADA Integration">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>Project Manager IT Onboarding at Concepto.id</h4>
+            <p>Mengelola pengembangan dan integrasi aplikasi KADA, termasuk sistem HRIS (Human Resource Information System) dan platform pencari kerja. Bertanggung jawab atas koordinasi tim, perencanaan sprint, dan memastikan kualitas deliverable sesuai dengan kebutuhan klien.</p>
+            <div class="project-tech">
+              <span>Odoo</span>
+              <span>Python</span>
+              <span>Project Management</span>
+            </div>
+            <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x180?text=Portfolio+Website" alt="Portfolio Website">
-          <h4>Portfolio Website</h4>
-          <p>A responsive portfolio website with modern animations and a professional look.</p>
-          <a href="#" class="btn btn-outline" data-id="view-project-btn">View Project</a>
+        
+        <div class="project-card" data-category="odoo">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=Odoo+Customization" alt="Odoo Customization">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>Technical Odoo Customize Developer at PT Yifang Cargo Mutiara Elektronik</h4>
+            <p>Mengimplementasikan dan mengkustomisasi modul Odoo sesuai dengan alur bisnis perusahaan. Mengembangkan fitur khusus untuk manajemen inventori, akuntansi, dan sistem logistik yang terintegrasi, meningkatkan efisiensi operasional sebesar 35%.</p>
+            <div class="project-tech">
+              <span>Odoo</span>
+              <span>Python</span>
+              <span>XML</span>
+            </div>
+            <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
+          </div>
+        </div>
+
+       <div class="project-card" data-category="Mobile, web">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=Odoo+Customization" alt="Mobile Apps">
+            <div class="project-overlay">s
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+        <div class="project-info">
+          <h4>Research & Backend Developer  mobile Apps (Hutama Marga Waskita) at Delameta Bilano </h4>
+          <p>Mengembangkan platform Mobile appilication pada sisi BackEnd modern dengan fitur pembayaran terintegrasi, manajemen inventori real-time, dan dashboard analitik.</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+          </div>
+          <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
+        </div>
+        
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=E-Commerce+Platform" alt="Web/Mobile Platform">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>Research & Backend Developer  Bus Monitoring AI at Delameta Bilano </h4>
+            <p>Mengembangkan platform Web/Mobile  appilication pada sisi BackEnd  untuk monitoring bus dengan integrasi ke AI camera dan GPS tracking modern dengan fitur pembayaran terintegrasi, manajemen inventori real-time, dan dashboard analitik.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Python</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=E-Commerce+Platform" alt="E-Commerce Platform">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="project-card" data-category="web management">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/600x400?text=CRM+System" alt="CRM System">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
+                <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>Backoffice System</h4>
+            <p>Merancang dan mengimplementasikan sistem Backoffice untuk pesantren yang disesuaikan dengan kebutuhan spesifik pesantren, termasuk otomatisasi alur kerja, pelacakan by barcode, dan integrasi dengan platform komunikasi.</p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>Nest.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center">
+        <a href="#" id="load-more-projects" class="btn btn-primary" data-id="load-more-btn">Muat Lebih Banyak</a>
+      </div>
+    </div> -->
+  </section>
+
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <h3 data-id="experience-title">Pengalaman Kerja</h3>
+        <p data-id="experience-subtitle">Perjalanan karir profesional saya</p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>2025 - Sekarang</span>
+          </div>
+          <div class="timeline-content">
+            <h4>Project Manager IT Onboarding</h4>
+            <h5>Concepto.id</h5>
+            <p>Mengelola tim pengembangan untuk proyek-proyek integrasi sistem dan aplikasi mobile. Bertanggung jawab atas perencanaan proyek, alokasi sumber daya, dan memastikan pengiriman tepat waktu sesuai dengan kebutuhan klien.</p>
+            <ul class="experience-list">
+              <li>Mengelola pengembangan fitur baru dan integrasi aplikasi KADA</li>
+              <li>Mengkoordinasikan tim lintas fungsi dengan metodologi Agile</li>
+              <li>Meningkatkan efisiensi pengiriman proyek sebesar 25%</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>June 2024 - December 2024  </span>
+          </div>
+          <div class="timeline-content">
+            <h4>Technical Odoo Customize Developer</h4>
+            <h5>PT Yifang Cargo Mutiara Elektronik</h5>
+            <p>Mengimplementasikan dan mengkustomisasi modul Odoo sesuai dengan alur bisnis perusahaan. Mengembangkan fitur khusus untuk manajemen inventori, akuntansi, dan sistem logistik yang terintegrasi.</p>
+            <ul class="experience-list">
+              <li>Mengembangkan modul kustom untuk manajemen inventori dan logistik</li>
+              <li>Mengintegrasikan sistem Odoo dengan platform e-commerce</li>
+              <li>Meningkatkan efisiensi operasional sebesar 35%</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span> January 2024 - June 2024</span>
+          </div>
+          <div class="timeline-content">
+            <h4>Backend Engineer</h4>
+            <h5>PT Delameta Bilano</h5>
+            <p>Mengembangkan aplikasi web untuk berbagai klien dengan fokus pada pengalaman pengguna dan performa. Bekerja dengan teknologi modern seperti React, Node.js, dan berbagai database.</p>
+            <ul class="experience-list">
+              <li>Mengembangkan dan memelihara aplikasi web untuk klien enterprise</li>
+              <li>Mengimplementasikan arsitektur microservices</li>
+              <li>Berkolaborasi dengan tim desain untuk menciptakan UI/UX yang optimal</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact">
     <div class="container">
       <div class="section-header">
-        <h3 data-id="contact-title">Kontak</h3>
-        <p data-id="contact-subtitle">Tertarik bekerja sama? Hubungi saya melalui salah satu kontak berikut</p>
+        <h3 data-id="contact-title" class="reveal">Hubungi Saya</h3>
+        <p data-id="contact-subtitle" class="reveal">Tertarik untuk bekerja sama? Silakan hubungi saya</p>
       </div>
-      <div class="contact-grid">
+      
+      <div class="contact-container">
         <div class="contact-info">
-          <h4><i class="fas fa-envelope"></i> Email</h4>
-          <p><a href="mailto:okiramadani53@Gmail.com">okiramadani53@Gmail.com</a></p>
+          <div class="contact-item reveal">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>okiramadani53@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item reveal">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Telepon</h4>
+              <p>+62 856 9104 2250</p>
+            </div>
+          </div>
+          
+          <div class="contact-item reveal">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Lokasi</h4>
+              <p>Jakarta/Medan, Indonesia</p>
+            </div>
+          </div>
+          
+          <div class="contact-item reveal">
+            <i class="fas fa-globe"></i>
+            <div>
+              <h4>Social Media</h4>
+              <div class="social-icons">
+                <a href="https://linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/your-username" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-info">
-          <h4><i class="fab fa-github"></i> GitHub</h4>
-          <p><a href="https://github.com/Okiramadani15" target="_blank">github.com/okiramadani</a></p>
-        </div>
-        <div class="contact-info">
-          <h4><i class="fab fa-linkedin"></i> LinkedIn</h4>
-          <p><a href="https://www.linkedin.com/in/oki-ramadani/" target="_blank">linkedin.com/in/oki-ramadani</a></p>
+        
+        <div class="contact-direct reveal">
+          <div class="contact-card">
+            <div class="contact-card-inner">
+              <h4>Hubungi Langsung</h4>
+              <p>Silakan hubungi saya melalui email atau WhatsApp untuk diskusi lebih lanjut tentang proyek atau kolaborasi yang ingin Anda bicarakan.</p>
+              <div class="contact-buttons">
+                <a href="mailto:okiramadani53@gmail.com" class="btn primary-btn">
+                  <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://wa.me/6285691042250" target="_blank" class="btn secondary-btn">
+                  <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Oki Ramadani. All rights reserved.</p>
-    <p data-id="footer-text">Made with <i class="fas fa-heart" style="color: var(--primary-color);"></i> in Indonesia</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Oki Ramadani</h3>
+          <p> project Manager & Full Stack Developer</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-services">
+          <h4>Layanan</h4>
+          <ul>
+            <li>Web Development</li>
+            <li>Odoo Development</li>
+            <li>Project Management</li>
+            <li>Konsultasi IT</li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <p><i class="fas fa-envelope"></i> okiramadani53@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +62 856 9104 2250</p>
+          <p><i class="fas fa-map-marker-alt"></i> Jakarta/Medan, Indonesia</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Oki Ramadani. All Rights Reserved.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/your-username" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/your-username" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- Theme Toggle Button -->
-  <div class="theme-toggle" id="theme-toggle">
-    <i class="fas fa-moon"></i>
-  </div>
+  <a href="#" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Language translations
-      const translations = {
-        'id': {
-          'nav-about': 'Tentang',
-          'nav-skills': 'Keahlian',
-          'nav-projects': 'Proyek',
-          'nav-contact': 'Kontak',
-          'hero-title': 'Selamat Datang di Portfolio Saya',
-          'hero-subtitle': 'Saya adalah pengembang web yang memiliki semangat tinggi membangun aplikasi modern dengan fokus pada pengalaman pengguna dan kode berkualitas tinggi.',
-          'hero-cta': 'Hubungi Saya',
-          'about-title': 'Tentang Saya',
-          'about-subtitle': 'Mengenal lebih dekat siapa saya dan apa yang saya lakukan',
-          'about-description': 'Saya adalah pengembang web yang memiliki semangat tinggi membangun aplikasi modern. Dengan pengalaman dalam pengembangan front-end dan back-end dan Project Manager, saya menciptakan solusi digital yang responsif, cepat, detail, dan mudah digunakan.',
-          'skills-title': 'Keahlian',
-          'skills-subtitle': 'Teknologi dan alat yang saya kuasai',
-          'dev-skills-title': 'Keahlian Pengembangan',
-          'other-skills-title': 'Keahlian Lainnya',
-          'tech-stack-title': 'Teknologi yang Dikuasai',
-          'projects-title': 'Proyek',
-          'projects-subtitle': 'Beberapa proyek terbaru yang telah saya kerjakan',
-          'view-projects-btn': 'Lihat Semua Proyek',
-          'view-project-btn': 'Lihat Proyek',
-          'contact-title': 'Kontak',
-          'contact-subtitle': 'Tertarik bekerja sama? Hubungi saya melalui salah satu kontak berikut',
-          'footer-text': 'Dibuat dengan <i class="fas fa-heart" style="color: var(--primary-color);"></i> di Indonesia'
-        },
-        'en': {
-          'nav-about': 'About',
-          'nav-skills': 'Skills',
-          'nav-projects': 'Projects',
-          'nav-contact': 'Contact',
-          'hero-title': 'Welcome to My Portfolio',
-          'hero-subtitle': 'I am a web developer with a passion for building modern applications with a focus on user experience and high-quality code.',
-          'hero-cta': 'Contact Me',
-          'about-title': 'About Me',
-          'about-subtitle': 'Get to know who I am and what I do',
-          'about-description': 'I am a web developer with a passion for building modern applications. With experience in front-end and back-end development and as a Project Manager, I create digital solutions that are responsive, fast, detailed, and user-friendly.',
-          'skills-title': 'Skills',
-          'skills-subtitle': 'Technologies and tools I master',
-          'dev-skills-title': 'Development Skills',
-          'other-skills-title': 'Other Skills',
-          'tech-stack-title': 'Technology Stack',
-          'projects-title': 'Projects',
-          'projects-subtitle': 'Some of the latest projects I have worked on',
-          'view-projects-btn': 'View All Projects',
-          'view-project-btn': 'View Project',
-          'contact-title': 'Contact',
-          'contact-subtitle': 'Interested in working together? Contact me through one of the following',
-          'footer-text': 'Made with <i class="fas fa-heart" style="color: var(--primary-color);"></i> in Indonesia'
-        }
-      };
-      
-      // Language toggle functionality
-      const langIdBtn = document.getElementById('lang-id');
-      const langEnBtn = document.getElementById('lang-en');
-      const htmlElement = document.documentElement;
-      
-      // Check for saved language preference or use default
-      const savedLang = localStorage.getItem('language') || 'id';
-      
-      // Apply the saved language
-      setLanguage(savedLang);
-      
-      // Set active button based on saved language
-      if (savedLang === 'en') {
-        langIdBtn.classList.remove('active');
-        langEnBtn.classList.add('active');
-      } else {
-        langIdBtn.classList.add('active');
-        langEnBtn.classList.remove('active');
-      }
-      
-      // Set language when buttons are clicked
-      langIdBtn.addEventListener('click', () => {
-        setLanguage('id');
-        langIdBtn.classList.add('active');
-        langEnBtn.classList.remove('active');
-        localStorage.setItem('language', 'id');
-        htmlElement.setAttribute('lang', 'id');
-      });
-      
-      langEnBtn.addEventListener('click', () => {
-        setLanguage('en');
-        langEnBtn.classList.add('active');
-        langIdBtn.classList.remove('active');
-        localStorage.setItem('language', 'en');
-        htmlElement.setAttribute('lang', 'en');
-      });
-      
-      // Function to set language
-      function setLanguage(lang) {
-        const elements = document.querySelectorAll('[data-id]');
-        elements.forEach(element => {
-          const key = element.getAttribute('data-id');
-          if (translations[lang][key]) {
-            if (key === 'footer-text') {
-              element.innerHTML = translations[lang][key];
-            } else {
-              element.textContent = translations[lang][key];
-            }
-          }
-        });
-        
-        // Update toggle projects button text
-        const toggleButton = document.getElementById('toggle-projects-button');
-        if (toggleButton.textContent.includes('Hide') || toggleButton.textContent.includes('Sembunyikan')) {
-          toggleButton.textContent = lang === 'id' ? 'Sembunyikan Proyek' : 'Hide Projects';
-        }
-      }
-      
-      // Theme Toggle Functionality
-      const themeToggle = document.getElementById('theme-toggle');
-      const themeIcon = themeToggle.querySelector('i');
-      
-      // Check for saved theme preference or use default
-      const savedTheme = localStorage.getItem('theme') || 'dark';
-      
-      // Apply the saved theme
-      if (savedTheme === 'light') {
-        htmlElement.classList.add('light-mode');
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
-      }
-      
-      // Toggle theme when button is clicked
-      themeToggle.addEventListener('click', () => {
-        htmlElement.classList.toggle('light-mode');
-        
-        // Update icon
-        if (htmlElement.classList.contains('light-mode')) {
-          themeIcon.classList.replace('fa-moon', 'fa-sun');
-          localStorage.setItem('theme', 'light');
-        } else {
-          themeIcon.classList.replace('fa-sun', 'fa-moon');
-          localStorage.setItem('theme', 'dark');
-        }
-        
-        // Add animation to theme toggle
-        themeToggle.classList.add('animate');
-        setTimeout(() => {
-          themeToggle.classList.remove('animate');
-        }, 500);
-      });
-      
-      // Toggle projects visibility
-      const toggleButton = document.getElementById('toggle-projects-button');
-      const projectGrid = document.getElementById('project-grid');
-      
-      toggleButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        if (projectGrid.style.display === 'none') {
-          projectGrid.style.display = 'grid';
-          const currentLang = localStorage.getItem('language') || 'id';
-          toggleButton.textContent = currentLang === 'id' ? 'Sembunyikan Proyek' : 'Hide Projects';
-          
-          // Smooth scroll to project grid
-          setTimeout(() => {
-            projectGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }, 100);
-          
-          // Add animation to project cards
-          const projectCards = document.querySelectorAll('.project-card');
-          projectCards.forEach((card, index) => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            setTimeout(() => {
-              card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-              card.style.opacity = '1';
-              card.style.transform = 'translateY(0)';
-            }, 100 + (index * 100));
-          });
-        } else {
-          projectGrid.style.display = 'none';
-          const currentLang = localStorage.getItem('language') || 'id';
-          toggleButton.textContent = currentLang === 'id' ? 'Lihat Semua Proyek' : 'View All Projects';
-          
-          // Smooth scroll back to projects section header
-          document.querySelector('#projects .section-header').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-      
-      // Handle navigation to projects section
-      const projectsNavLink = document.querySelector('.nav-links a[href="#projects"]');
-      projectsNavLink.addEventListener('click', function(e) {
-        // If projects are hidden, show them when clicking the nav link
-        if (projectGrid.style.display === 'none') {
-          setTimeout(() => {
-            toggleButton.click();
-          }, 500); // Small delay to ensure the section is in view first
-        }
-      });
-      
-      // Animate progress bars on scroll
-      const animateProgressBars = () => {
-        const skillSection = document.getElementById('skills');
-        const progressBars = document.querySelectorAll('.progress');
-        
-        // Check if skills section is in viewport
-        const sectionPosition = skillSection.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.3;
-        
-        if (sectionPosition < screenPosition) {
-          progressBars.forEach(progress => {
-            progress.style.width = progress.parentElement.previousElementSibling.querySelector('.skill-percentage').textContent;
-            progress.style.transition = 'width 1.5s ease-in-out';
-          });
-          // Remove event listener once animation is triggered
-          window.removeEventListener('scroll', animateProgressBars);
-        }
-      };
-      
-      // Add scroll event listener
-      window.addEventListener('scroll', animateProgressBars);
-      // Check on initial load as well
-      animateProgressBars();
-    });
-  </script>
+  <script src="script.js"></script>
+  <script src="script-animation.js"></script>
 </body>
 </html>
