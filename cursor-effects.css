@@ -1,0 +1,184 @@
+/* Custom Cursor Effects */
+
+/* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Custom cursor outer ring */
+.custom-cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: width 0.3s, height 0.3s, border-color 0.3s;
+  mix-blend-mode: difference;
+}
+
+/* Custom cursor dot */
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  transition: transform 0.1s;
+}
+
+/* Cursor hover effect */
+.custom-cursor.active {
+  width: 60px;
+  height: 60px;
+  border-color: var(--secondary-color);
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+  mix-blend-mode: normal;
+}
+
+/* Interactive elements hover state */
+a:hover, button:hover, .project-card:hover, .timeline-item:hover, .skill-item:hover {
+  cursor: none;
+}
+
+/* Disable custom cursor on mobile */
+@media (max-width: 768px) {
+  .custom-cursor, .cursor-dot {
+    display: none;
+  }
+  
+  body {
+    cursor: auto;
+  }
+  
+  a:hover, button:hover, .project-card:hover, .timeline-item:hover, .skill-item:hover {
+    cursor: pointer;
+  }
+}
+
+/* Particle effect for hero section */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Background grid animation */
+@keyframes grid-pulse {
+  0% {
+    opacity: 0.2;
+    background-size: 50px 50px;
+  }
+  50% {
+    opacity: 0.4;
+    background-size: 55px 55px;
+  }
+  100% {
+    opacity: 0.2;
+    background-size: 50px 50px;
+  }
+}
+
+/* Text highlight effect */
+::selection {
+  background: rgba(var(--primary-color-rgb), 0.2);
+  color: var(--primary-color);
+}
+
+/* Timeline animation */
+.timeline-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.timeline-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item:nth-child(odd) {
+  transform: translateX(-50px);
+}
+
+.timeline-item:nth-child(even) {
+  transform: translateX(50px);
+}
+
+.timeline-item.animate:nth-child(odd),
+.timeline-item.animate:nth-child(even) {
+  transform: translateX(0);
+}
+
+/* Staggered animation for child elements */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.stagger-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide in animations */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.slide-left.active,
+.slide-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale animation */
+.scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.scale-in.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Rotate animation */
+.rotate-in {
+  opacity: 0;
+  transform: rotate(10deg) scale(0.8);
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.rotate-in.active {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}

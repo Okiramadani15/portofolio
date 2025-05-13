@@ -1,0 +1,41 @@
+/* Normal Cursor Styles - No animations */
+
+/* Reset any custom cursor styles */
+body, 
+a, 
+button, 
+.project-card, 
+.timeline-item, 
+.skill-item,
+input, 
+textarea, 
+.filter-btn, 
+.social-links a {
+  cursor: auto !important;
+}
+
+/* Set specific cursor types for interactive elements */
+a, 
+button, 
+.btn,
+.project-card, 
+.filter-btn, 
+.social-links a,
+.theme-toggle-btn,
+.mobile-menu-btn,
+.lang-btn {
+  cursor: pointer !important;
+}
+
+/* Set text cursor for text inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+  cursor: text !important;
+}
+
+/* Hide any custom cursor elements */
+.custom-cursor,
+.cursor-dot {
+  display: none !important;
+}

@@ -1,0 +1,45 @@
+/* Hero Title Animation Fix */
+
+/* Remove any existing animations on the hero title */
+.hero-text h2[data-id="hero-title"] {
+  animation: none !important;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Add a simple fade-in animation */
+.hero-text h2[data-id="hero-title"].active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Override any text scramble effects */
+.hero-text h2[data-id="hero-title"]::before,
+.hero-text h2[data-id="hero-title"]::after {
+  display: none !important;
+}
+
+/* Ensure the text is visible and not clipped */
+.hero-text h2[data-id="hero-title"] {
+  overflow: visible !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+}
+
+/* Fix for any potential conflicts with other animations */
+@keyframes fadeInHeroTitle {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the hero title */
+.hero-text h2[data-id="hero-title"].animate-title {
+  animation: fadeInHeroTitle 1s ease-out forwards !important;
+}

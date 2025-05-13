@@ -1,0 +1,88 @@
+/* Custom Cursor Fix Styles */
+
+/* Hide default cursor on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none !important;
+  }
+}
+
+/* Custom cursor outer ring */
+.custom-cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: width 0.3s, height 0.3s, border-color 0.3s, opacity 0.3s;
+  mix-blend-mode: difference;
+  opacity: 1;
+  left: -100px; /* Start offscreen */
+  top: -100px;
+}
+
+/* Custom cursor dot */
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  transition: transform 0.1s, opacity 0.3s;
+  opacity: 1;
+  left: -100px; /* Start offscreen */
+  top: -100px;
+}
+
+/* Cursor hover effect */
+.custom-cursor.active {
+  width: 60px;
+  height: 60px;
+  border-color: var(--secondary-color);
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+  mix-blend-mode: normal;
+}
+
+/* Interactive elements hover state */
+a:hover, button:hover, .project-card:hover, .timeline-item:hover, .skill-item:hover,
+input:hover, textarea:hover, .filter-btn:hover, .social-links a:hover {
+  cursor: none;
+}
+
+/* Disable custom cursor on mobile/touch devices */
+@media (hover: none) or (pointer: coarse) or (max-width: 768px) {
+  .custom-cursor, .cursor-dot {
+    display: none !important;
+  }
+  
+  body {
+    cursor: auto !important;
+  }
+  
+  a:hover, button:hover, .project-card:hover, .timeline-item:hover, .skill-item:hover,
+  input:hover, textarea:hover, .filter-btn:hover, .social-links a:hover {
+    cursor: pointer !important;
+  }
+}
+
+/* Fix for dark mode */
+.dark-mode .custom-cursor {
+  border-color: var(--primary-color);
+}
+
+.dark-mode .cursor-dot {
+  background-color: var(--primary-color);
+}
+
+/* Fix for cursor visibility */
+.custom-cursor, .cursor-dot {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}

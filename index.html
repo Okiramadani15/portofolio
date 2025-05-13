@@ -8,12 +8,45 @@
   <link rel="stylesheet" href="style-animation.css">
   <link rel="stylesheet" href="two-tone-theme.css">
   <link rel="stylesheet" href="contact-fix.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="professional-enhancements.css">
+  <link rel="stylesheet" href="normal-cursor.css">
+  <link rel="stylesheet" href="preloader.css">
+  <link rel="stylesheet" href="bug-fixes.css">
+  <link rel="stylesheet" href="responsive-fix.css">
+  <link rel="stylesheet" href="hero-title.css">
+  <link rel="stylesheet" href="style-fixes.css">
+  <link rel="stylesheet" href="project-img-fix.css">
+  <link rel="stylesheet" href="dark-mode-styles.css">
+  <link rel="stylesheet" href="theme-toggle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta name="description" content="Portfolio profesional Oki Ramadani, seorang Full Stack Developer dan Project Manager dengan keahlian dalam Odoo, React, Node.js, dan Python.">
   <meta name="keywords" content="web developer, full stack developer, project manager, odoo developer, react developer, portfolio">
+  <!-- Open Graph Meta Tags for better social sharing -->
+  <meta property="og:title" content="Oki Ramadani | Web Developer">
+  <meta property="og:description" content="Portfolio profesional Oki Ramadani, seorang Full Stack Developer dan Project Manager dengan keahlian dalam Odoo, React, Node.js, dan Python.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:image" content="https://yourwebsite.com/images/profile.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader">
+      <svg viewBox="0 0 80 80">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#6366f1" />
+            <stop offset="100%" stop-color="#10b981" />
+          </linearGradient>
+        </defs>
+        <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
+      </svg>
+      <div class="loader-text">Loading<span class="dots">...</span></div>
+    </div>
+  </div>
   <header>
     <div class="logo">
       <h1>Oki Ramadani</h1>
@@ -42,7 +75,7 @@
 
   <section class="hero">
     <div class="hero-text">
-      <h2 data-id="hero-title" class="reveal">Selamat Datang di Portfolio Saya</h2>
+      <h2> WELCOME</h2>
       <p data-id="hero-subtitle" class="reveal">Saya adalah seorang Project Manager sekaligus Web Developer yang memiliki semangat tinggi dalam membangun aplikasi modern. Saya berfokus pada manajemen proyek yang efektif, pengalaman pengguna yang optimal, dan penerapan kode berkualitas tinggi untuk memastikan hasil yang fungsional dan berkelanjutan.</p>
       <div class="hero-buttons reveal">
         <a href="#contact" class="btn primary-btn" data-id="hero-cta">Hubungi Saya</a>
@@ -60,7 +93,7 @@
   <section id="about">
     <div class="container">
       <div class="section-header">
-        <h3 data-id="about-title">Tentang Saya</h3>
+        <h3 data-id="">Tentang Saya</h3>
         <p data-id="about-subtitle">Mengenal lebih dekat siapa saya dan apa yang saya lakukan</p>
       </div>
       <div class="about-content">
@@ -73,7 +106,8 @@
               <i class="fas fa-user-graduate"></i>
               <div>
                 <h5>Pendidikan</h5>
-                <p>S1 Sistem Informasi, Universitas Mikroskil</p>
+                <p>S1 Sistem Informasi, Universitas Mikroskil.</p>
+                <p>|| JavaScript Bootcamp, Rubicamp at Bandung.</p>
               </div>
             </div>
             <div class="detail-item">
@@ -107,7 +141,7 @@
   <section id="skills">
     <div class="container">
       <div class="section-header">
-        <h3 data-id="skills-title">Keahlian</h3>
+        <h3 data-id="">Keahlian</h3>
         <p data-id="skills-subtitle">Teknologi dan alat yang saya kuasai</p>
       </div>
       
@@ -242,7 +276,7 @@
   <section id="projects" class="projects">
     <div class="container">
       <div class="section-header">
-        <h3 data-id="projects-title" class="reveal">Proyek</h3>
+        <h3 data-id="" class="reveal">Proyek</h3>
         <p data-id="projects-subtitle" class="reveal">Beberapa proyek terbaru yang telah saya kerjakan</p>
       </div>
       
@@ -268,11 +302,13 @@
           </div>
           <div class="project-info">
             <h4>Project Manager IT Onboarding at Concepto.id</h4>
-            <p>Mengelola pengembangan dan integrasi aplikasi KADA, termasuk sistem HRIS (Human Resource Information System) dan platform pencari kerja. Bertanggung jawab atas koordinasi tim, perencanaan sprint, dan memastikan kualitas deliverable sesuai dengan kebutuhan klien.</p>
+            <p>Mengelola pengembangan dan integrasi Fitur CVSAYA aplikasi KADA, termasuk sistem HRIS (Human Resource Information System) dan platform pencari kerja. Bertanggung jawab atas koordinasi tim, perencanaan sprint, dan memastikan kualitas deliverable sesuai dengan kebutuhan klien.</p>
             <div class="project-tech">
-              <span>Odoo</span>
-              <span>Python</span>
-              <span>Project Management</span>
+              <span>Figma</span>
+              <span>Next.js </span>
+              <span>Nest.js</span>
+              <span>Flutter</span>
+              <span>Project Management Tools</span>
             </div>
             <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
           </div>
@@ -296,6 +332,7 @@
               <span>Odoo</span>
               <span>Python</span>
               <span>XML</span>
+              <span>PostgreSQL</span>
             </div>
             <a href="#" class="btn btn-outline" data-id="view-project-btn">Lihat Proyek</a>
           </div>
@@ -316,7 +353,8 @@
             <h4>Research & Backend Developer mobile Apps (Hutama Marga Waskita) at Delameta Bilano</h4>
             <p>Mengembangkan platform Mobile appilication pada sisi BackEnd modern dengan fitur pembayaran terintegrasi, manajemen inventori real-time, dan dashboard analitik.</p>
             <div class="project-tech">
-              <span>React</span>
+              <span>Figma</span>
+              <span>Next.js</span>
               <span>Node.js</span>
               <span>PostgreSQL</span>
             </div>
@@ -427,7 +465,7 @@
        <div class="project-card" data-category="Mobile, web">
           <div class="project-img">
             <img src="https://via.placeholder.com/600x400?text=Odoo+Customization" alt="Mobile Apps">
-            <div class="project-overlay">s
+            <div class="project-overlay">
               <div class="project-links">
                 <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-eye"></i></a>
                 <a href="#" class="project-link" aria-label="View Code"><i class="fas fa-code"></i></a>
@@ -512,8 +550,8 @@
   <section id="experience" class="experience">
     <div class="container">
       <div class="section-header">
-        <h3 data-id="experience-title">Pengalaman Kerja</h3>
-        <p data-id="experience-subtitle">Perjalanan karir profesional saya</p>
+        <h3 data-id="">Pengalaman Kerja</h3>
+        <p data-id="">Perjalanan karir profesional saya</p>
       </div>
       
       <div class="timeline">
@@ -526,8 +564,8 @@
             <h4>Project Manager IT Onboarding</h4>
             <h5>Concepto.id</h5>
             <p>Mengelola tim pengembangan untuk proyek-proyek integrasi sistem dan aplikasi mobile. Bertanggung jawab atas perencanaan proyek, alokasi sumber daya, dan memastikan pengiriman tepat waktu sesuai dengan kebutuhan klien.</p>
-            <ul class="experience-list">
-              <li>Mengelola pengembangan fitur baru dan integrasi aplikasi KADA</li>
+            <ul class="">
+              <li>Mengelola pengembangan fitur CVSAYA baru dan integrasi aplikasi KADA</li>
               <li>Mengkoordinasikan tim lintas fungsi dengan metodologi Agile</li>
               <li>Meningkatkan efisiensi pengiriman proyek sebesar 25%</li>
             </ul>
@@ -574,7 +612,7 @@
   <section id="contact" class="contact">
     <div class="container">
       <div class="section-header">
-        <h3 data-id="contact-title" class="reveal">Hubungi Saya</h3>
+        <h3 data-id="" class="reveal">Hubungi Saya</h3>
         <p data-id="contact-subtitle" class="reveal">Tertarik untuk bekerja sama? Silakan hubungi saya</p>
       </div>
       
@@ -689,5 +727,28 @@
 
   <script src="script.js"></script>
   <script src="script-animation.js"></script>
+  <script src="script-pro-fixed.js"></script>
+  <script src="preloader-script.js"></script>
+  <script src="theme-fix.js"></script>
+  <script src="project-fix.js"></script>
+  <script src="hero-title-fix.js"></script>
+  <script src="fix-all-bugs.js"></script>
+  <script src="cursor-fix.js"></script>
+  
+  <!-- Add structured data for better SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Oki Ramadani",
+      "jobTitle": "Full Stack Developer & Project Manager",
+      "url": "https://yourwebsite.com",
+      "sameAs": [
+        "https://linkedin.com/in/your-profile",
+        "https://github.com/your-username"
+      ],
+      "knowsAbout": ["Web Development", "Project Management", "Odoo", "React", "Node.js", "Python"]
+    }
+  </script>
 </body>
 </html>

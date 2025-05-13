@@ -1,0 +1,222 @@
+/* Comprehensive Style Fixes */
+
+/* Fix for missing or incomplete CSS */
+.project-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: var(--transition) !important;
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.1) !important;
+}
+
+.project-info {
+  padding: 25px !important;
+}
+
+.project-info h4 {
+  font-size: 1.2rem !important;
+  margin-bottom: 15px !important;
+  color: var(--text-color) !important;
+}
+
+.project-info p {
+  font-size: 0.9rem !important;
+  color: var(--secondary-color) !important;
+  margin-bottom: 20px !important;
+}
+
+.project-tech {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+.project-tech span {
+  font-size: 0.8rem !important;
+  padding: 5px 12px !important;
+  background-color: rgba(var(--primary-color-rgb), 0.1) !important;
+  color: var(--primary-color) !important;
+  border-radius: 50px !important;
+}
+
+.btn-outline {
+  padding: 8px 20px !important;
+  background-color: transparent !important;
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  border-radius: 50px !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  transition: var(--transition) !important;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Fix for text color in dark mode */
+.dark-mode body {
+  color: var(--text-color) !important;
+}
+
+.dark-mode .nav-links a {
+  color: var(--text-color) !important;
+}
+
+.dark-mode .hero-text h2 {
+  color: var(--text-color) !important;
+}
+
+.dark-mode .section-header h3 {
+  color: var(--text-color) !important;
+}
+
+.dark-mode .skills-category h4 {
+  color: var(--text-color) !important;
+}
+
+.dark-mode .project-info h4 {
+  color: var(--text-color) !important;
+}
+
+/* Fix for mobile menu */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed !important;
+    top: 70px !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: calc(100vh - 70px) !important;
+    background-color: var(--card-bg) !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    transition: var(--transition) !important;
+    z-index: 999 !important;
+  }
+  
+  .nav-links.active {
+    left: 0 !important;
+  }
+  
+  .mobile-menu-btn {
+    display: block !important;
+  }
+}
+
+/* Fix for hero section on mobile */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 120px 20px 60px !important;
+  }
+  
+  .hero-text {
+    max-width: 100% !important;
+    margin-bottom: 40px !important;
+  }
+  
+  .hero-buttons {
+    justify-content: center !important;
+  }
+  
+  .social-links {
+    justify-content: center !important;
+  }
+  
+  .profile-img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+}
+
+/* Fix for reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fix for hero title animation */
+.hero-text h2[data-id="hero-title"] {
+  animation: none !important;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.hero-text h2[data-id="hero-title"].active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Fix for progress bars */
+.progress {
+  width: 0 !important;
+  transition: width 1.5s ease-in-out !important;
+}
+
+/* Fix for project card structure */
+.project-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.project-img {
+  position: relative !important;
+  overflow: hidden !important;
+  height: 200px !important;
+}
+
+.project-overlay {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(var(--primary-color-rgb), 0.8) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0 !important;
+  transition: var(--transition) !important;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1 !important;
+}
+
+/* Fix for theme toggle button */
+#theme-toggle-btn {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.dark-mode #theme-toggle-btn {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Fix for social links */
+.social-links a {
+  background-color: var(--card-bg) !important;
+  color: var(--primary-color) !important;
+}
+
+.social-links a:hover {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}

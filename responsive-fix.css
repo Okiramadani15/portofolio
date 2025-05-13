@@ -1,0 +1,166 @@
+/* Responsive Fixes for Portfolio */
+
+/* Fix for mobile layout issues */
+@media (max-width: 768px) {
+  /* Fix for project cards on mobile */
+  .project-card {
+    margin-bottom: 30px;
+  }
+  
+  /* Fix for timeline on mobile */
+  .timeline::before {
+    left: 30px !important;
+  }
+  
+  .timeline-dot {
+    left: 30px !important;
+  }
+  
+  .timeline-date {
+    width: 100% !important;
+    text-align: left !important;
+    padding-left: 80px !important;
+    padding-right: 0 !important;
+    position: relative !important;
+  }
+  
+  .timeline-content {
+    left: 0 !important;
+    width: 100% !important;
+    margin-top: 50px !important;
+  }
+  
+  /* Fix for contact section on mobile */
+  .contact-container {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .contact-buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  
+  .contact-buttons .btn {
+    width: 100% !important;
+  }
+  
+  /* Fix for mobile menu */
+  .nav-links {
+    background-color: var(--card-bg) !important;
+  }
+  
+  /* Fix for section headers on mobile */
+  .section-header h3 {
+    font-size: 2rem !important;
+  }
+  
+  .section-header h3::before {
+    font-size: 3.5rem !important;
+  }
+}
+
+/* Fix for tablet layout issues */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Fix for project grid on tablet */
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  /* Fix for skills container on tablet */
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  /* Fix for contact section on tablet */
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Fix for dark mode in mobile menu */
+@media (max-width: 768px) {
+  .dark-mode .nav-links {
+    background-color: var(--card-bg) !important;
+  }
+  
+  .dark-mode .mobile-menu-btn {
+    color: var(--text-color) !important;
+  }
+}
+
+/* Fix for preloader on mobile */
+@media (max-width: 768px) {
+  .loader svg {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .loader-text {
+    font-size: 1rem !important;
+  }
+}
+
+/* Fix for custom cursor on mobile */
+@media (max-width: 768px) {
+  .custom-cursor, .cursor-dot {
+    display: none !important;
+  }
+  
+  body {
+    cursor: auto !important;
+  }
+  
+  a:hover, button:hover, .project-card:hover, .timeline-item:hover, .skill-item:hover {
+    cursor: pointer !important;
+  }
+}
+
+/* Fix for project card structure */
+.project-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.project-info {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.project-img {
+  height: 240px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.project-overlay {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Fix for inconsistent button styling */
+.btn {
+  display: inline-block !important;
+  text-align: center !important;
+}
+
+/* Fix for theme toggle button position on mobile */
+@media (max-width: 768px) {
+  .theme-toggle {
+    bottom: 80px !important;
+    left: 20px !important;
+  }
+  
+  #theme-toggle-btn {
+    width: 45px !important;
+    height: 45px !important;
+  }
+}
