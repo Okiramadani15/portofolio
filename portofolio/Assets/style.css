@@ -1,0 +1,62 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+  }
+  header {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+  }
+  nav {
+    margin-top: 1rem;
+  }
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  .skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skills-list li {
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+  }
+  .project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: white;
+  }
+  
